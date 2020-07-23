@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+   <html>
+   <head>
+       <link rel="stylesheet" type="text/css" href="style.css">
+       <script type="text/javascript" src="hangman.js"></script>
+       <meta charset="utf-8">
+       <title>Hangman</title>
+   </head>
+  <div class="navbar">
+    <a href="page1.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Extras
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+          <a href="https://www.northrimcrossfit.com/wod-1/">This weeks workouts</a>
+          <a href="http://www.thomaswelding.com/products/index.php">More Thomas products</a>
+          <a href="https://as.csuchico.edu/index.php/wildcat-recreation-center-wrec/">Pool Schedule</a>
+      </div>
+    </div>
+  </div>
+   <h1 align="center">Hangman!</h1>
+   <h3 align="center">Guess a Letter, or click "Guess Word" to guess the whole word.</h3>
+  <body onkeypress="guessLetter(event)" onload="newGame()">
+    <div class="btn-group">
+      <button class="button" onclick="guessWord()">Guess Word</button>
+      <button class="button" onclick="newGame()">New Game</button>
+    </div>
+      <!--switch statement that displays different photo of hangman based on number of guesses gotten wrong-->
+      <img id="Hang_id" class="hang_img" src="hang1.PNG" width="300" height="350">
+<br>
+       <p id="keyboardGuesses"></p>
+       <p id="playerGuess"></p>
+       <p id="inProgress"></p>
+  </body>
+  </html
